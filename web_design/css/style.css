@@ -1,0 +1,73 @@
+/* header, footer는 추후 분리 후 인클루드 사용 예정. */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* header */
+header {
+    height: 100px;
+    background-color: lightblue;
+}
+
+#hd_tp {
+    border-bottom: 1px solid gray;
+}
+
+
+/* article */
+article {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+#slide {
+    height: 300px;
+    background-color: lightgoldenrodyellow;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 300px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+.it_img {
+    width: 100%;
+}
+
+.it_cont {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.it_name {
+    font-size: 15px;
+}
+
+.it_price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    background-color: lightcyan;
+}

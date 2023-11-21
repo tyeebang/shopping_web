@@ -1,34 +1,16 @@
-// header, footer는 추후 분리 후 인클루드 사용 예정.
+// // header, footer는 추후 분리 후 인클루드 사용 예정.
 
-function callItems() {
-    let items = [
-    {
-        it_name : "와이드 루즈핏 빅사이즈 남성 멜란",
-        price : 13900,
-        img_url : "./img/aa.jpg"
-    },
-    {
-        it_name : "오버핏 꽈배기 브이넥 니트",
-        price : 27900,
-        img_url : "./img/bb.jpg"
-    },
-    {
-        it_name : "루즈핏 브이넥 박시 조끼 여성의류",
-        price : 15000,
-        img_url : "./img/cc.jpg"
-    },
-    {
-        it_name : "브이넥 울니트 조끼",
-        price : 36700,
-        img_url : "./img/dd.jpg"
-    }
-]
+async function callItems() {
+    const RES = await fetch("../items.json");
+    const JSON = await RES.json();
 
-let itemsHTML = "";
+    let items = JSON;
 
-for(let i = 0; i < items.length; i++) {
-    let item = items[i]
-    itemsHTML += `
+    let itemsHTML = "";
+
+    for (let i = 0; i < items.length; i++) {
+        let item = items[i]
+        itemsHTML += `
     <div class="item">
         <img src="${item.img_url}" alt="${item.it_name}" class="it_img">
         <div class="it_cont">
@@ -37,15 +19,9 @@ for(let i = 0; i < items.length; i++) {
         </div>
     </div>
     `
+    }
+
+    document.querySelector("#items").innerHTML = itemsHTML;
 }
 
-document.querySelector("#items").innerHTML = itemsHTML;
-}
-
-// callItems();
-
-fetch('../items.json')
-  .then((data) => data.json())
-  .then((obj) => {
-    console.log(obj);
-  });
+callItems();

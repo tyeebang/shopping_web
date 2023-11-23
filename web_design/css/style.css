@@ -8,6 +8,12 @@
     transition: .5s;
 }
 
+*:before, 
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /* header */
 header {
@@ -27,22 +33,42 @@ header {
 #hd_tp_ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 250px;
     margin: 0 0 0 1300px;
-    font-size: 14px;
     line-height: 40px;
 }
 
 #hd_tp_ul li a {
-    color: #2d2d2d;;
+    position: relative;
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding-bottom: 2.5px;
 }
 
 #hd_tp_ul li:nth-child(4) {
     font-weight: bold;
 }
 
-#hd_tp_ul li a:hover {
-    color: #afafaf;;
+#hd_tp_ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #2d2d2d;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+}
+
+#hd_tp_ul li a:hover { 
+    color: #afafaf;
+}
+
+#hd_tp_ul li a:hover:after { 
+    width: 100%;
 }
 
 #hd_logo {
@@ -66,7 +92,7 @@ header {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, .95);
     border: 1px solid rgb(0, 0, 0, .1);
-    transition: 0s;
+    transition: .0s;
     z-index: 10000;
 }
 
@@ -77,13 +103,36 @@ header {
     font-size: 14px;
 }
 
-#hd_bt_ul li a {
-    color: #2d2d2d;
-    font-size: 18px;
+#hd_bt_ul li:nth-child(6) {
+    font-weight: bold;
 }
 
-#hd_bt_ul li a:hover {
+#hd_bt_ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 18px;
+    letter-spacing: .5px;
+    padding-bottom: 2.5px;
+}
+
+#hd_bt_ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #2d2d2d;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+}
+
+#hd_bt_ul li a:hover { 
     color: #afafaf;
+}
+
+#hd_bt_ul li a:hover:after { 
+    width: 100%;
 }
 
 /* article */
@@ -95,17 +144,21 @@ article {
 
 #slide {
     width: 1903px;
-    height: 700px;
+    height: 550px;
     background-color: rgb(250, 250, 226);
 }
 
-article > h1 {
+#slide img {
+    width: 100%;
+}
+
+article>h1 {
     height: 75px;
     line-height: 145px;
     color: #2d2d2d;
 }
 
-article > p {
+article>p {
     height: 75px;
     line-height: 55px;
     color: #676767;
@@ -168,5 +221,22 @@ article > p {
 /* footer */
 footer {
     height: 200px;
-    background-color: rgb(240, 251, 251);
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+#ft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 300px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+#ft p:nth-child(1) {
+    line-height: 35px;
+    font-weight: bold;
 }

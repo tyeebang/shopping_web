@@ -5,7 +5,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    transition: .5s;
 }
 
 *:before, 
@@ -46,6 +45,7 @@ header {
     font-size: 14px;
     letter-spacing: .5px;
     padding-bottom: 2.5px;
+    transition: .5s;
 }
 
 #hd_tp_ul li:nth-child(4) {
@@ -114,6 +114,7 @@ header {
     font-size: 18px;
     letter-spacing: .5px;
     padding-bottom: 2.5px;
+    transition: .5s;
 }
 
 #hd_bt_ul li a:after {
@@ -146,20 +147,20 @@ article {
     0% {
         opacity: 0;
     }
-    10% {
+    6% {
         opacity: 1;
     }
-    23% {
+    27% {
         opacity: 1;
     }
-    33% {
+    39% {
         opacity: 0;
     }
-    90% {
+    94% {
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -167,44 +168,48 @@ article {
     0% {
         opacity: 0;
     }
-    23% {
+    27% {
         opacity: 0;
     }
-    33% {
+    39% {
         opacity: 1;
     }
-    56% {
+    60% {
         opacity: 1;
     }
-    66% {
+    72% {
         opacity: 0;
     }
     100% {
         opacity: 0;
     }
+
 }
 
 @keyframes slideThi {
     0% {
-        opacity: 0;
-    }
-    56% {
-        opacity: 0;
-    }
-    66% {
         opacity: 1;
     }
-    90% {
+    6% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    72% {
+        opacity: 1;
+    }
+    94% {
         opacity: 1;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
 #slide {
     width: 1903px;
-    height: 600px;
+    height: 550px;
 }
 
 #slide div {
@@ -217,24 +222,11 @@ article {
 
 #slide div a {
     position: absolute;
-    display: inline-block;
     width: 100%;
-    height: 100% !important;
+    height: 100%;
     top: 0;
     left: 0;
     opacity: 0;
-}
-
-#slide div a:nth-child(2) {
-    animation: slideFir 15s 0s infinite;
-}
-
-#slide div a:nth-child(4) {
-    animation: slideSec 15s 0s infinite;
-}
-
-#slide div a:nth-child(6) {
-    animation: slideThi 15s 0s infinite;
 }
 
 #slide img {
@@ -244,65 +236,72 @@ article {
 
 #slide input[type=radio] {
     position: absolute;
-    bottom: -35px;
+    bottom: 30px;
     width: 30px;
     height: 10px;
-    border: 1px solid #000;
-    padding: 5px;
-    -webkit-appearance: none;
+    background-color: white;
+    border: 1.5px solid #afafaf;
+    border-radius: 20px;
+    appearance: none;
+    transition: .5s;
+    z-index: 1000000;
+    cursor: pointer;
 }
 
 #slide input[type=radio]:nth-child(1) {
-    right: 150px;
+    left: 50px;
+}
+
+#slide input[type=radio]:nth-child(2) {
+    left: 100px;
 }
 
 #slide input[type=radio]:nth-child(3) {
-    right: 100px;
-}
-
-#slide input[type=radio]:nth-child(5) {
-    right: 50px;
+    left: 150px;
 }
 
 #slide input[type=radio]:hover {
-    height: 20px;
-    background-color: #2d2d2d;
+    background-color: #afafaf;
 }
 
-#slide input[id=hdZipSlide]:checked + a {
+#slide input[type=radio]:checked {
+    background-color: #676767;
+}
+
+#slide input[id=hdZipSlide]:checked + input + input + a {
     animation: slideFir 15s 0s infinite;
 }
 
-#slide input[id=hdZipSlide]:checked + a + input + a {
+#slide input[id=hdZipSlide]:checked + input + input + a + a {
     animation: slideSec 15s 0s infinite;
 }
 
-#slide input[id=hdZipSlide]:checked + a + input + a + input + a {
+#slide input[id=hdZipSlide]:checked + input + input + a + a + a {
     animation: slideThi 15s 0s infinite;
 }
 
-#slide input[id=hdZipSlide]:checked + a {
-    animation: slideSec 15s 0s infinite;
-}
-
-#slide input[id=hdZipSlide]:checked + a + input + a {
-    animation: slideThi 15s 0s infinite;
-}
-
-#slide input[id=hdZipSlide]:checked + a + input + a + input + a {
+#slide input[id=strSlide]:checked + input + a + a {
     animation: slideFir 15s 0s infinite;
 }
 
-#slide input[id=hdZipSlide]:checked + a {
+#slide input[id=strSlide]:checked + input + a + a + a {
+    animation: slideSec 15s 0s infinite;
+}
+
+#slide input[id=strSlide]:checked + input + a {
     animation: slideThi 15s 0s infinite;
 }
 
-#slide input[id=hdZipSlide]:checked + a + input + a {
+#slide input[id=itSlide]:checked + a + a + a {
     animation: slideFir 15s 0s infinite;
 }
 
-#slide input[id=hdZipSlide]:checked + a + input + a + input + a {
+#slide input[id=itSlide]:checked + a {
     animation: slideSec 15s 0s infinite;
+}
+
+#slide input[id=itSlide]:checked + a + a {
+    animation: slideThi 15s 0s infinite;
 }
 
 article > h1 {
@@ -336,6 +335,7 @@ article > p {
 .it_img {
     width: 300px;
     height: 350px;
+    transition: .5s;
 }
 
 .item:hover .it_img {

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLY YOU</title>
+    <link rel="stylesheet" href="../css/items.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div id="hd_tp">
+            <ul id="hd_tp_ul">
+                <li><a href="../member/login.html">LOGIN</a></li>
+                <li><a href="../member/register.html">JOIN</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">MY PAGE</a></li>
+            </ul>
+        </div>
+
+        <div id="hd_logo">
+            <a href="../index.html">
+                <img src="../img/logo/logo.png" alt="logo">
+            </a>
+        </div>
+        
+        <div id="hd_menu">
+            <ul id="hd_bt_ul">
+                <li><a href="./items.html">TOP</a></li>
+                <li><a href="./items.html">BOTTOM</a></li>
+                <li><a href="./items.html">OUTER</a></li>
+                <li><a href="./items.html">OPS</a></li>
+                <li><a href="./items.html">SKIRT</a></li>
+                <li><a href="./items.html">SEASON</a></li>
+            </ul>
+        </div>
+
+        <div id="scroll">
+            <div id="scroll_up"></div>
+            <div id="scroll_down"></div>
+        </div>
+    </header>
+
+    <!-- article -->
+    <article>
+        <h1>category</h1>
+        <p>category 인기 상품을 만나보세요</p>
+        
+        <div id="items">
+            <div class="item">
+                <!-- DB -> items -->
+            </div>
+        </div>
+    </article>
+
+
+    <!-- footer -->
+    <footer>
+        <div id="ft">
+            <p>ABOUT ONLYYOU</p>
+            <p>copyright© 2023. Um. All rights reserved. Human Resources Devlopment Service of Korea.</p>
+            <p>홈페이지 관련 문의 : 070-@@@@-@@@@</p>
+            <p>상담시간 : 월~금 10:00~17:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</p>
+            <p>대표번호 : 010-@@@@-@@@@</p>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script>
+        function callItemsAlpha() {
+        
+        let items = [
+            {
+                "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
+                "price": 13900,
+                "img_url": "../img/items/aa.jpg"
+            },
+            {
+                "it_name": "오버핏 꽈배기 브이넥 니트",
+                "price": 27900,
+                "img_url": "../img/items/bb.jpg"
+            },
+            {
+                "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
+                "price": 15000,
+                "img_url": "../img/items/cc.jpg"
+            },
+            {
+                "it_name": "브이넥 울니트 조끼",
+                "price": 36700,
+                "img_url": "../img/items/dd.jpg"
+            },
+            {
+                "it_name": "브이넥 울니트 조끼",
+                "price": 36700,
+                "img_url": "../img/items/dd.jpg"
+            }, {
+                "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
+                "price": 13900,
+                "img_url": "../img/items/aa.jpg"
+            },
+            {
+                "it_name": "오버핏 꽈배기 브이넥 니트",
+                "price": 27900,
+                "img_url": "../img/items/bb.jpg"
+            },
+            {
+                "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
+                "price": 15000,
+                "img_url": "../img/items/cc.jpg"
+            },
+            {
+                "it_name": "브이넥 울니트 조끼",
+                "price": 36700,
+                "img_url": "../img/items/dd.jpg"
+            },
+            {
+                "it_name": "브이넥 울니트 조끼",
+                "price": 36700,
+                "img_url": "../img/items/dd.jpg"
+            }, {
+                "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
+                "price": 13900,
+                "img_url": "../img/items/aa.jpg"
+            },
+            {
+                "it_name": "오버핏 꽈배기 브이넥 니트",
+                "price": 27900,
+                "img_url": "../img/items/bb.jpg"
+            },
+            {
+                "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
+                "price": 15000,
+                "img_url": "../img/items/cc.jpg"
+            },
+            {
+                "it_name": "브이넥 울니트 조끼",
+                "price": 36700,
+                "img_url": "../img/items/dd.jpg"
+            },
+            {
+                "it_name": "브이넥 울니트 조끼",
+                "price": 36700,
+                "img_url": "../img/items/dd.jpg"
+            }
+        ];
+
+        let itemsHTML = "";
+
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i]
+            itemsHTML +=  `
+        <div class="item">
+            <a href="#">
+                <img src="${item.img_url}" alt="${item.it_name}" class="it_img">
+                <div class="it_cont">
+                    <span class="it_name">${item.it_name}</span>
+                    <hr>
+                    <span class="it_price">${item.price + 'won'}</span>
+                </div>
+            <a>
+        </div>
+        `
+        }
+
+        document.querySelector("#items").innerHTML = '<h1>임시</h1>';
+        document.querySelector("#items").innerHTML = itemsHTML;
+        }
+
+        callItemsAlpha();
+
+        // header
+
+        // 메뉴 고정
+        window.addEventListener("scroll", function () {
+        let hd_menu = document.getElementById("hd_menu");
+        let value = window.scrollY;
+        // scrollY의 값이 210 초과인 경우 hd_menu에 css 값 추가
+        if (value > 210) {
+            hd_menu.style.cssText = "position: fixed; margin-top: -210px; border-top: none; width: 1903px;";
+        } else {
+            hd_menu.style.cssText = "position: static;";
+        }
+        });
+    </script>
+</body>
+</html>

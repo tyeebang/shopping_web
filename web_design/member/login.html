@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONLY YOU</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <!-- header, footer는 추후 분리 후 인클루드 사용 예정. -->
-
     <!-- header -->
     <header>
         <div id="hd_tp">
             <ul id="hd_tp_ul">
-                <li><a href="./member/login.html">LOGIN</a></li>
-                <li><a href="./member/register.html">JOIN</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./register.html">JOIN</a></li>
                 <li><a href="#">CART</a></li>
                 <li><a href="#">MY PAGE</a></li>
             </ul>
         </div>
 
         <div id="hd_logo">
-            <a href="#">
-                <img src="./img/logo/logo.png" alt="logo">
+            <a href="../index.html">
+                <img src="../img/logo/logo.png" alt="logo">
             </a>
         </div>
         
@@ -44,26 +42,24 @@
         </div>
     </header>
 
-
-    <!-- article -->
     <article>
-        <div id="slide">
-            <div>
-                <input type="radio" name="slide" id="hdZipSlide" checked>
-                <input type="radio" name="slide" id="strSlide">
-                <input type="radio" name="slide" id="itSlide">
-                <a href="#"><img src="./img/slide/hoodZipSlide.jpg" alt="hoodZipSlide"></a>
-                <a href="#"><img src="./img/slide/sweatherSlide.jpg" alt="sweatherSlide"></a>
-                <a href="#"><img src="./img/slide/itemSlide.jpg" alt="itemSlide"></a>
-            </div>
-        </div>
-
-        <h1>BEST CHOICE</h1>
-        <p>only you, 당신을 위한 최고의 상품을 직접 만나보세요</p>
-        
-        <div id="items">
-            <div class="item">
-                <!-- DB -> items -->
+        <div id="loginContainer">
+            <h3>LOGIN</h3>
+            
+            <form action="">
+                <div id="loginBox">
+                    <input type="text" placeholder="아이디" name="id">
+                    <input type="password" placeholder="비밀번호" name="pwd">
+                    <input type="submit" value="로그인">
+                </div>
+            </form>
+    
+            <div id="loginOption">
+                <a href="#">아이디 찾기</a>
+                <p> | </p>
+                <a href="#">비밀번호 찾기</a>
+                <p> | </p>
+                <a href="#">회원가입</a>
             </div>
         </div>
     </article>
@@ -81,6 +77,17 @@
     </footer>
 
     <!-- js -->
-    <script src="./js/script.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+        let hd_menu = document.getElementById("hd_menu");
+        let value = window.scrollY;
+        // scrollY의 값이 210 초과인 경우 hd_menu에 css 값 추가
+        if (value > 210) {
+            hd_menu.style.cssText = "position: fixed; margin-top: -210px; border-top: none; width: 1903px;";
+        } else {
+            hd_menu.style.cssText = "position: static;";
+        }
+    });
+    </script>
 </body>
 </html>

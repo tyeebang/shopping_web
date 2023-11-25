@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLY YOU</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div id="hd_tp">
+            <ul id="hd_tp_ul">
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="#">JOIN</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">MY PAGE</a></li>
+            </ul>
+        </div>
+
+        <div id="hd_logo">
+            <a href="../index.html">
+                <img src="../img/logo/logo.png" alt="logo">
+            </a>
+        </div>
+        
+        <div id="hd_menu">
+            <ul id="hd_bt_ul">
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">BOTTOM</a></li>
+                <li><a href="#">OUTER</a></li>
+                <li><a href="#">OPS</a></li>
+                <li><a href="#">SKIRT</a></li>
+                <li><a href="#">SEASON</a></li>
+            </ul>
+        </div>
+
+        <div id="scroll">
+            <div id="scroll_up"></div>
+            <div id="scroll_down"></div>
+        </div>
+    </header>
+
+    <article>
+        <div id="joinContainer">
+            <h3>JOIN US</h3>
+
+            <form action="">            
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="pw"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 확인</td>
+                        <td><input type="password" name="pw"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td><input type="text" name="phoneNum"></td>
+                    </tr>
+                    <tr>
+                        <td>주소</td>
+                        <td><input type="text" name="adress"></td>
+                    </tr>
+                </table>
+                <input type="submit" value="가입">
+            </form>
+        </div>
+    </article>
+
+
+    <!-- footer -->
+    <footer>
+        <div id="ft">
+            <p>ABOUT ONLYYOU</p>
+            <p>copyright© 2023. Um. All rights reserved. Human Resources Devlopment Service of Korea.</p>
+            <p>홈페이지 관련 문의 : 070-@@@@-@@@@</p>
+            <p>상담시간 : 월~금 10:00~17:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</p>
+            <p>대표번호 : 010-@@@@-@@@@</p>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script>
+        window.addEventListener("scroll", function () {
+        let hd_menu = document.getElementById("hd_menu");
+        let value = window.scrollY;
+        // scrollY의 값이 210 초과인 경우 hd_menu에 css 값 추가
+        if (value > 210) {
+            hd_menu.style.cssText = "position: fixed; margin-top: -210px; border-top: none; width: 1903px;";
+        } else {
+            hd_menu.style.cssText = "position: static;";
+        }
+    });
+    </script>
+</body>
+</html>

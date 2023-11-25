@@ -1,0 +1,96 @@
+/* register */
+
+.join_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin-top: -30px;
+}
+
+#joinContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
+}
+
+#joinContainer h3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#joinContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#joinContainer table {
+    width: 800px;
+    padding: 0;
+    border: none;
+    border-top: 2px solid #afafaf;
+    border-bottom: 2px solid #afafaf;
+    border-collapse: collapse;
+    color: #2d2d2d;
+    font-size: 12px;
+}
+
+#joinContainer tr {
+    border-top: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+    height: 40px;
+}
+
+#joinContainer td {
+    padding-left: 15px;
+}
+
+#joinContainer tr td:nth-child(1) {
+    width: 130px;
+    border-right: 1px solid #afafaf;
+}
+
+#joinContainer input[type=text], input[type=password] {
+    width: 30%;
+    height: 30px;
+    font-size: 14px;
+    color: #2d2d2d;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    transition: .5s;
+}
+
+#joinContainer input::placeholder {
+    transition: .3s;
+}
+
+#joinContainer input:focus {
+    outline: none;
+    border-bottom: 1.5px solid #2d2d2d;
+    place-content: #2d2d2d;
+}
+
+#joinContainer input:focus::placeholder {
+    color: #2d2d2d;
+}
+
+#joinContainer input[type=submit] {
+    margin-top: 15px;
+    width: 30%;
+    height: 45px;
+    font-size: 16px;
+    color: white;
+    background-color: #393939;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#joinContainer input[type=submit]:hover {
+    background-color: #202020;
+}

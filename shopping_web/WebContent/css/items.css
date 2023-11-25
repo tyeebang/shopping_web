@@ -1,0 +1,74 @@
+
+/* items */
+
+.ca_article {
+    text-align: center;
+    height: 100%;
+    margin-top: -30px;
+}
+
+.ca_article > h1 {
+    height: 75px;
+    line-height: 145px;
+    color: #2d2d2d;
+}
+
+.ca_article > p {
+    height: 75px;
+    line-height: 55px;
+    color: #676767;
+}
+
+#ca_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.ca_item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+.ca_it_img {
+    width: 400px;
+    height: 465px;
+    transition: .5s;
+}
+
+.ca_item:hover .ca_it_img {
+    filter: brightness(50%);
+    scale: 1.05;
+}
+
+.ca_it_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    padding: 4px;
+    color: #2d2d2d;
+}
+
+.ca_it_cont hr {
+    border: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+.ca_it_name {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ca_it_price {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}

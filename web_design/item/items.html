@@ -43,12 +43,12 @@
     </header>
 
     <!-- article -->
-    <article>
+    <article class="ca_article">
         <h1>category</h1>
         <p>category 인기 상품을 만나보세요</p>
         
-        <div id="items">
-            <div class="item">
+        <div id="ca_items">
+            <div class="ca_item">
                 <!-- DB -> items -->
             </div>
         </div>
@@ -151,21 +151,21 @@
         for (let i = 0; i < items.length; i++) {
             let item = items[i]
             itemsHTML +=  `
-        <div class="item">
+        <div class="ca_item">
             <a href="#">
-                <img src="${item.img_url}" alt="${item.it_name}" class="it_img">
-                <div class="it_cont">
-                    <span class="it_name">${item.it_name}</span>
+                <img src="${item.img_url}" alt="${item.it_name}" class="ca_it_img">
+                <div class="ca_it_cont">
+                    <span class="ca_it_name">${item.it_name}</span>
                     <hr>
-                    <span class="it_price">${item.price + 'won'}</span>
+                    <span class="ca_it_price">${item.price + 'won'}</span>
                 </div>
             <a>
         </div>
         `
         }
 
-        document.querySelector("#items").innerHTML = '<h1>임시</h1>';
-        document.querySelector("#items").innerHTML = itemsHTML;
+        document.querySelector("#ca_items").innerHTML = '<h1>임시</h1>';
+        document.querySelector("#ca_items").innerHTML = itemsHTML;
         }
 
         callItemsAlpha();

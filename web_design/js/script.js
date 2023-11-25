@@ -123,8 +123,111 @@ function callItemsAlpha() {
     document.querySelector("#items").innerHTML = '<h1>임시</h1>';
     document.querySelector("#items").innerHTML = itemsHTML;
 }
+function callItemsBeta() {
 
-callItemsAlpha();
+    let items = [
+        {
+            "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
+            "price": 13900,
+            "img_url": "./img/items/aa.jpg"
+        },
+        {
+            "it_name": "오버핏 꽈배기 브이넥 니트",
+            "price": 27900,
+            "img_url": "./img/items/bb.jpg"
+        },
+        {
+            "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
+            "price": 15000,
+            "img_url": "./img/items/cc.jpg"
+        },
+        {
+            "it_name": "브이넥 울니트 조끼",
+            "price": 36700,
+            "img_url": "./img/items/dd.jpg"
+        },
+        {
+            "it_name": "브이넥 울니트 조끼",
+            "price": 36700,
+            "img_url": "./img/items/dd.jpg"
+        }, {
+            "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
+            "price": 13900,
+            "img_url": "./img/items/aa.jpg"
+        },
+        {
+            "it_name": "오버핏 꽈배기 브이넥 니트",
+            "price": 27900,
+            "img_url": "./img/items/bb.jpg"
+        },
+        {
+            "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
+            "price": 15000,
+            "img_url": "./img/items/cc.jpg"
+        },
+        {
+            "it_name": "브이넥 울니트 조끼",
+            "price": 36700,
+            "img_url": "./img/items/dd.jpg"
+        },
+        {
+            "it_name": "브이넥 울니트 조끼",
+            "price": 36700,
+            "img_url": "./img/items/dd.jpg"
+        }, {
+            "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
+            "price": 13900,
+            "img_url": "./img/items/aa.jpg"
+        },
+        {
+            "it_name": "오버핏 꽈배기 브이넥 니트",
+            "price": 27900,
+            "img_url": "./img/items/bb.jpg"
+        },
+        {
+            "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
+            "price": 15000,
+            "img_url": "./img/items/cc.jpg"
+        },
+        {
+            "it_name": "브이넥 울니트 조끼",
+            "price": 36700,
+            "img_url": "./img/items/dd.jpg"
+        },
+        {
+            "it_name": "브이넥 울니트 조끼",
+            "price": 36700,
+            "img_url": "./img/items/dd.jpg"
+        }
+    ];
+
+    let itemsHTML = "";
+
+    for (let i = 0; i < items.length; i++) {
+        let item = items[i]
+        itemsHTML +=  `
+    <div class="item">
+        <a href="#">
+            <img src="${item.img_url}" alt="${item.it_name}" class="ca_it_img">
+            <div class="ca_it_cont">
+                <span class="ca_it_name">${item.it_name}</span>
+                <hr>
+                <span class="ca_it_price">${item.price + 'won'}</span>
+            </div>
+        <a>
+    </div>
+    `
+    }
+
+    document.querySelector("#ca_items").innerHTML = '<h1>임시</h1>';
+    document.querySelector("#ca_items").innerHTML = itemsHTML;
+}
+
+if (document.querySelector("#items") !== null) {
+    callItemsAlpha();
+} else {
+    callItemsBeta();
+}
 
 // header
 

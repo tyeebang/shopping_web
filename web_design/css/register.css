@@ -137,7 +137,7 @@ header {
 
 /* register */
 
-article {
+.join_article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,13 +159,13 @@ article {
     font-weight: lighter;
 }
 
-form {
+#joinContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-table {
+#joinContainer table {
     width: 800px;
     padding: 0;
     border: none;
@@ -176,22 +176,22 @@ table {
     font-size: 12px;
 }
 
-tr {
+#joinContainer tr {
     border-top: 1px solid #afafaf;
     border-bottom: 1px solid #afafaf;
     height: 40px;
 }
 
-td {
+#joinContainer td {
     padding-left: 15px;
 }
 
-tr td:nth-child(1) {
+#joinContainer tr td:nth-child(1) {
     width: 130px;
     border-right: 1px solid #afafaf;
 }
 
-input[type=text], input[type=password] {
+#joinContainer input[type=text], input[type=password] {
     width: 30%;
     height: 30px;
     font-size: 14px;
@@ -202,21 +202,21 @@ input[type=text], input[type=password] {
     transition: .5s;
 }
 
-input::placeholder {
+#joinContainer input::placeholder {
     transition: .3s;
 }
 
-input:focus {
+#joinContainer input:focus {
     outline: none;
     border-bottom: 1.5px solid #2d2d2d;
     place-content: #2d2d2d;
 }
 
-input:focus::placeholder {
+#joinContainer input:focus::placeholder {
     color: #2d2d2d;
 }
 
-input[type=submit] {
+#joinContainer input[type=submit] {
     margin-top: 15px;
     width: 30%;
     height: 45px;
@@ -228,7 +228,7 @@ input[type=submit] {
     transition: .5s;
 }
 
-input[type=submit]:hover {
+#joinContainer input[type=submit]:hover {
     background-color: #202020;
 }
 

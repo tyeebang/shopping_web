@@ -9,7 +9,7 @@
         <div id="loginContainer">
             <h3>LOGIN</h3>
             
-            <form action="">
+            <form action="/shopping_web/login" method="post">
                 <div id="loginBox">
                     <input type="text" placeholder="아이디" name="id">
                     <input type="password" placeholder="비밀번호" name="pwd">
@@ -22,7 +22,7 @@
                 <p> | </p>
                 <a href="#">비밀번호 찾기</a>
                 <p> | </p>
-                <a href="#">회원가입</a>
+                <a href="./register.jsp">회원가입</a>
             </div>
         </div>
     </article>

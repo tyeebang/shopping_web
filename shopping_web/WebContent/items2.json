@@ -3,7 +3,7 @@
         "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
         "price": 13900,
         "img_url": "./img/itmes/aa.jpg",
-        "category": "top"
+        "category": "middle"
     },
     {
         "it_name": "오버핏 꽈배기 브이넥 니트",
@@ -15,7 +15,7 @@
         "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
         "price": 15000,
         "img_url": "./img/itmes/cc.jpg",
-        "category": "top"
+        "category": "bottom"
     },
     {
         "it_name": "브이넥 울니트 조끼",

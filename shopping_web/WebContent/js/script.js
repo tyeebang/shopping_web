@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 
 // 상품 리스트 뽑아오기
 async function callItemsAlpha() {
-    const RESP = await fetch("../items2.json");
+    const RESP = await fetch("/shopping_web/items2.json");
     const ITEMJSON = await RESP.json();
 
     let items = ITEMJSON;
@@ -39,7 +39,7 @@ async function callItemsAlpha() {
 }
 
 async function callItemsBeta() {
-    const RESP = await fetch("../items2.json");
+    const RESP = await fetch("/shopping_web/items2.json");
     const ITEMJSON = await RESP.json();
 
     let ca_items = ITEMJSON;

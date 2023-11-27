@@ -6,11 +6,11 @@
 
     <!-- article -->
     <article class="ca_article">
-        <h1>category</h1>
-        <p>category 인기 상품을 만나보세요</p>
+        <h1>SKIRT</h1>
+        <p>치마 인기 상품을 만나보세요</p>
         
-        <div id="ca_items">
-            <div class="ca_item">
+        <div id="skirt_items">
+            <div class="skirt_item">
                 <!-- DB -> items -->
             </div>
         </div>

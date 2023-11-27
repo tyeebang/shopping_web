@@ -19,7 +19,7 @@
     color: #676767;
 }
 
-#ca_items {
+#top_items, #bot_items, #out_items, #ops_items, #skirt_items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -27,7 +27,7 @@
     margin: 0 auto;
 }
 
-.ca_item {
+.top_item, .bot_item, .out_item, .ops_item, .skirt_item {
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -41,7 +41,7 @@
     transition: .5s;
 }
 
-.ca_item:hover .ca_it_img {
+.top_item:hover .ca_it_img, .bot_item:hover .ca_it_img, .out_item:hover .ca_it_img, .ops_item:hover .ca_it_img, .skirt_item:hover .ca_it_img {
     filter: brightness(50%);
     scale: 1.05;
 }

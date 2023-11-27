@@ -1,3 +1,5 @@
+-- member table
+
 drop table member;
 
 create table member(member_id varchar2(20) constraint member_id_pk primary key, member_pwd varchar2(20), member_mail varchar2(30), 
@@ -11,4 +13,10 @@ insert into member(member_id, member_pwd, member_mail, member_name, member_phone
 
 select * from member;
 
-delete from member where member_id = 'wnsdn2930';
+delete from member where member_id = '';
+
+-- items table
+
+drop table items;
+
+create table items(it_name varchar2(50), price number, gender varchar2(8), category varchar2(6), img_url varchar2(35));

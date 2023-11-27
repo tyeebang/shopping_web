@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../menu.jsp" %>
+<%@ include file="./menu.jsp" %>
 
     <article class="main_article">
         <div id="slide">
@@ -8,9 +8,9 @@
                 <input type="radio" name="slide" id="hdZipSlide" checked>
                 <input type="radio" name="slide" id="strSlide">
                 <input type="radio" name="slide" id="itSlide">
-                <a href="./items.jsp"><img src="./img/slide/hoodZipSlide.jpg" alt="hoodZipSlide"></a>
-                <a href="./items.jsp"><img src="./img/slide/sweatherSlide.jpg" alt="sweatherSlide"></a>
-                <a href="./items.jsp"><img src="./img/slide/itemSlide.jpg" alt="itemSlide"></a>
+                <a href="./itemsOuter.jsp"><img src="./img/slide/hoodZipSlide.jpg" alt="hoodZipSlide"></a>
+                <a href="./itemsTop.jsp"><img src="./img/slide/sweatherSlide.jpg" alt="sweatherSlide"></a>
+                <a href="./itemsOuter.jsp"><img src="./img/slide/itemSlide.jpg" alt="itemSlide"></a>
             </div>
         </div>
 
@@ -24,4 +24,4 @@
         </div>
     </article>
 
-<%@ include file="../footer.jsp" %>
+<%@ include file="./footer.jsp" %>

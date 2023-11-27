@@ -1,26 +1,354 @@
 [
     {
-        "it_name": "와이드 루즈핏 빅사이즈 남성 멜란",
-        "price": 13900,
-        "img_url": "./img/itmes/aa.jpg",
-        "category": "top"
+        "num": 1,
+        "it_name": "컬러 배색 1992 후드",
+        "price": 49800,
+        "gender": "forMen",
+        "category": "top",
+        "img_url": "./img/items/men_topA.jpg"
     },
     {
-        "it_name": "오버핏 꽈배기 브이넥 니트",
-        "price": 27900,
-        "img_url": "./img/itmes/bb.jpg",
-        "category": "top"
+        "num": 2,
+        "it_name": "데이 무지맨투맨[양기모]",
+        "price": 8500,
+        "gender": "forWomen",
+        "category": "top",
+        "img_url": "./img/items/women_topA.jpg"
     },
     {
-        "it_name": "루즈핏 브이넥 박시 조끼 여성의류",
-        "price": 15000,
-        "img_url": "./img/itmes/cc.jpg",
-        "category": "top"
+        "num": 3,
+        "it_name": "Deep One Tuck Seat Pants",
+        "price": 30000,
+        "gender": "forMen",
+        "category": "bottom",
+        "img_url": "./img/items/men_bottomA.jpg"
     },
     {
-        "it_name": "브이넥 울니트 조끼",
-        "price": 36700,
-        "img_url": "./img/itmes/dd.jpg",
-        "category": "top"
+        "num": 4,
+        "it_name": "히든밴딩 데님 롱 와이드 팬츠,바지",
+        "price": 23500,
+        "gender": "forWomen",
+        "category": "bottom",
+        "img_url": "./img/items/women_bottomA.jpg"
+    },
+    {
+        "num": 5,
+        "it_name": "베이직 푸퍼_SPJPD4TC11",
+        "price": 62000,
+        "gender": "forMen",
+        "category": "outer",
+        "img_url": "./img/items/men_outerA.jpg"
+    },
+    {
+        "num": 6,
+        "it_name": "후드 배색 이중지 떡볶이 코트 야상",
+        "price": 51000,
+        "gender": "forWomen",
+        "category": "outer",
+        "img_url": "./img/items/women_outerA.jpg"
+    },
+    {
+        "num": 7,
+        "it_name": "핫초코 체크 플리츠 미니 스커트",
+        "price": 27500,
+        "gender": "forWomen",
+        "category": "skirt",
+        "img_url": "./img/items/women_skirtA.jpg"
+    },
+    {
+        "num": 8,
+        "it_name": "라인 단추 데님 셔츠 롱원피스, 허리끈 ops",
+        "price": 23900,
+        "gender": "forWomen",
+        "category": "ops",
+        "img_url": "./img/items/women_opsA.jpg"
+    },
+    {
+        "num": 9,
+        "it_name": "빅스타 후드티",
+        "price": 45000,
+        "gender": "forMen",
+        "category": "top",
+        "img_url": "./img/items/men_topB.jpg"
+    },
+    {
+        "num": 10,
+        "it_name": "[기모]호키발포 오버핏 맨투맨",
+        "price": 19800,
+        "gender": "forWomen",
+        "category": "top",
+        "img_url": "./img/items/women_topB.jpg"
+    },
+    {
+        "num": 11,
+        "it_name": "이지 와이드 데님 팬츠 그레이",
+        "price": 52800,
+        "gender": "forMen",
+        "category": "bottom",
+        "img_url": "./img/items/men_bottomB.jpg"
+    },
+    {
+        "num": 12,
+        "it_name": "몸매보완 부츠컷 블랙 팬츠,바지",
+        "price": 25500,
+        "gender": "forWomen",
+        "category": "bottom",
+        "img_url": "./img/items/women_bottomB.jpg"
+    },
+    {
+        "num": 13,
+        "it_name": "스탠다드 블루종 스웨이드 자켓 블랙",
+        "price": 39900,
+        "gender": "forMen",
+        "category": "outer",
+        "img_url": "./img/items/men_outerB.jpg"
+    },
+    {
+        "num": 14,
+        "it_name": "둥근카라 후리스 코트",
+        "price": 23500,
+        "gender": "forWomen",
+        "category": "outer",
+        "img_url": "./img/items/women_outerB.jpg"
+    },
+    {
+        "num": 15,
+        "it_name": "리즐 카고 미니 스커트",
+        "price": 20500,
+        "gender": "forWomen",
+        "category": "skirt",
+        "img_url": "./img/items/women_skirtB.jpg"
+    },
+    {
+        "num": 16,
+        "it_name": "라인 단추 데님 셔츠 롱원피스, 허리끈 ops",
+        "price": 23900,
+        "gender": "forWomen",
+        "category": "ops",
+        "img_url": "./img/items/women_opsB.jpg"
+    },
+    {
+        "num": 17,
+        "it_name": " AUTHENTIC 후드",
+        "price": 31000,
+        "gender": "forMen",
+        "category": "top",
+        "img_url": "./img/items/men_topC.jpg"
+    },
+    {
+        "num": 18,
+        "it_name": "[기모]스윗 반크롭 후드티",
+        "price": 20500,
+        "gender": "forWomen",
+        "category": "top",
+        "img_url": "./img/items/women_topC.jpg"
+    },
+    {
+        "num": 19,
+        "it_name": "원턱 파라슈트 카고 데님팬츠_그레이",
+        "price": 47000,
+        "gender": "forMen",
+        "category": "bottom",
+        "img_url": "./img/items/men_bottomC.jpg"
+    },
+    {
+        "num": 20,
+        "it_name": "[숏,롱/기모]카고 와이드 면 밴딩 바지",
+        "price": 15500,
+        "gender": "forWomen",
+        "category": "bottom",
+        "img_url": "./img/items/women_bottomC.jpg"
+    },
+    {
+        "num": 21,
+        "it_name": "시그니처 패치 후드집업(기모)",
+        "price": 35000,
+        "gender": "forMen",
+        "category": "outer",
+        "img_url": "./img/items/men_outerC.jpg"
+    },
+    {
+        "num": 22,
+        "it_name": "솜빵빵 롱 떡볶이 박시핏 패딩",
+        "price": 53900,
+        "gender": "forWomen",
+        "category": "outer",
+        "img_url": "./img/items/women_outerC.jpg"
+    },
+    {
+        "num": 23,
+        "it_name": "나일론 카고 스트링 롱 스커트",
+        "price": 22500,
+        "gender": "forWomen",
+        "category": "skirt",
+        "img_url": "./img/items/women_skirtC.jpg"
+    },
+    {
+        "num": 24,
+        "it_name": "슬레이크 후드 올리브 HHHD3397",
+        "price": 57000,
+        "gender": "forMen",
+        "category": "top",
+        "img_url": "./img/items/men_topD.jpg"
+    },
+    {
+        "num": 25,
+        "it_name": "[기모]오리진 발포 후드티",
+        "price": 23500,
+        "gender": "forWomen",
+        "category": "top",
+        "img_url": "./img/items/women_topD.jpg"
+    },
+    {
+        "num": 26,
+        "it_name": "원턱 와이드 스웨트팬츠 그레이",
+        "price": 52000,
+        "gender": "forMen",
+        "category": "bottom",
+        "img_url": "./img/items/men_bottomD.jpg"
+    },
+    {
+        "num": 27,
+        "it_name": "매력 생지 카고 데님 팬츠",
+        "price": 20500,
+        "gender": "forWomen",
+        "category": "bottom",
+        "img_url": "./img/items/women_bottomD.jpg"
+    },
+    {
+        "num": 28,
+        "it_name": "R 시티 헤비 바시티자켓",
+        "price": 76800,
+        "gender": "forMen",
+        "category": "outer",
+        "img_url": "./img/items/men_outerD.jpg"
+    },
+    {
+        "num": 29,
+        "it_name": "밤비 양면 양털 크롭 점퍼,패딩",
+        "price": 40500,
+        "gender": "forWomen",
+        "category": "outer",
+        "img_url": "./img/items/women_outerD.jpg"
+    },
+    {
+        "num": 30,
+        "it_name": "플리츠 스커트 투피스",
+        "price": 20900,
+        "gender": "forWomen",
+        "category": "skirt",
+        "img_url": "./img/items/women_skirtD.jpg"
+    },
+    {
+        "num": 31,
+        "it_name": "소프트 필링 세미오버 라운드 니트 초코브라운",
+        "price": 59000,
+        "gender": "forMen",
+        "category": "top",
+        "img_url": "./img/items/men_topE.jpg"
+    },
+    {
+        "num": 32,
+        "it_name": "[기모]사우스 브이넥 맨투맨",
+        "price": 19500,
+        "gender": "forWomen",
+        "category": "top",
+        "img_url": "./img/items/women_topE.jpg"
+    },
+    {
+        "num": 33,
+        "it_name": "원턱 와이드 스웨트팬츠 블랙",
+        "price": 29900,
+        "gender": "forMen",
+        "category": "bottom",
+        "img_url": "./img/items/men_bottomE.jpg"
+    },
+    {
+        "num": 34,
+        "it_name": "스트랭 조거 팬츠",
+        "price": 15500,
+        "gender": "forWomen",
+        "category": "bottom",
+        "img_url": "./img/items/women_bottomE.jpg"
+    },
+    {
+        "num": 35,
+        "it_name": "리얼라이트 다운 베스트",
+        "price": 19000,
+        "gender": "forMen",
+        "category": "outer",
+        "img_url": "./img/items/men_outerE.jpg"
+    },
+    {
+        "num": 36,
+        "it_name": "미니벨라 니트 가디건",
+        "price": 20500,
+        "gender": "forWomen",
+        "category": "outer",
+        "img_url": "./img/items/women_outerE.jpg"
+    },
+    {
+        "num": 37,
+        "it_name": "쉬폰 주름 롱 스커트",
+        "price": 16900,
+        "gender": "forWomen",
+        "category": "skirt",
+        "img_url": "./img/items/women_skirtE.jpg"
+    },
+    {
+        "num": 38,
+        "it_name": "하프 집업 오버핏 스웨트 셔츠 [그레이]",
+        "price": 69800,
+        "gender": "forMen",
+        "category": "top",
+        "img_url": "./img/items/men_topF.jpg"
+    },
+    {
+        "num": 39,
+        "it_name": "[기모]스타칩 오버핏 후드티",
+        "price": 20500,
+        "gender": "forWomen",
+        "category": "top",
+        "img_url": "./img/items/women_topF.jpg"
+    },
+    {
+        "num": 40,
+        "it_name": "P[1003]롱 와이드 코튼팬츠(베이지)",
+        "price": 68000,
+        "gender": "forMen",
+        "category": "bottom",
+        "img_url": "./img/items/men_bottomF.jpg"
+    },
+    {
+        "num": 41,
+        "it_name": "넉넉핏 와이드일자팬츠",
+        "price": 9900,
+        "gender": "forWomen",
+        "category": "bottom",
+        "img_url": "./img/items/women_bottomF.jpg"
+    },
+    {
+        "num": 42,
+        "it_name": "싱글 코트 카멜",
+        "price": 89000,
+        "gender": "forMen",
+        "category": "outer",
+        "img_url": "./img/items/men_outerF.jpg"
+    },
+    {
+        "num": 43,
+        "it_name": "[누빔]기타 양털 누빔 자켓",
+        "price": 27500,
+        "gender": "forWomen",
+        "category": "outer",
+        "img_url": "./img/items/women_outerF.jpg"
+    },
+    {
+        "num": 44,
+        "it_name": "[무배]뉴트로 미니 스커트",
+        "price": 16500,
+        "gender": "forWomen",
+        "category": "skirt",
+        "img_url": "./img/items/women_skirtF.jpg"
     }
 ]

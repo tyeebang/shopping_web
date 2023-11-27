@@ -6,10 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>ONLY YOU</title>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/items.css">
-<link rel="stylesheet" href="./css/login.css">
-<link rel="stylesheet" href="./css/register.css">
+<link rel="stylesheet" href="./css/style.css?umA">
+<link rel="stylesheet" href="./css/items.css?umA">
+<link rel="stylesheet" href="./css/login.css?umA">
+<link rel="stylesheet" href="./css/register.css?umA">
 </head>
 <body>
 	<!-- header -->
@@ -28,7 +28,7 @@
 			%>
 			<ul id="hd_tp_ul" style="width: 350px">
 					<li><a href="/shopping_web/logout">LOGOUT(<%= login.getMemberId() %>)</a></li>
-					<li><a href="#">CART</a></li>
+					<!-- <li><a href="#">CART</a></li> -->
 					<li><a href="#">MY PAGE</a></li>
 			</ul>
 			<%
@@ -43,12 +43,11 @@
 
 		<div id="hd_menu">
 			<ul id="hd_bt_ul">
-				<li><a href="./items.jsp">TOP</a></li>
-				<li><a href="./items.jsp">BOTTOM</a></li>
-				<li><a href="./items.jsp">OUTER</a></li>
-				<li><a href="./items.jsp">OPS</a></li>
-				<li><a href="./items.jsp">SKIRT</a></li>
-				<li><a href="./items.jsp">SEASON</a></li>
+				<li><a href="./itemsTop.jsp">TOP</a></li>
+				<li><a href="./itemsBottom.jsp">BOTTOM</a></li>
+				<li><a href="./itemsOuter.jsp">OUTER</a></li>
+				<li><a href="./itemsOps.jsp">OPS</a></li>
+				<li><a href="./itemsSkirt.jsp">SKIRT</a></li>
 			</ul>
 		</div>
 

@@ -19,27 +19,31 @@ import vo.MemberVO;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public LoginServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public LoginServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html; charset=UTF-8");
 		request.setCharacterEncoding("UTF-8");
@@ -49,16 +53,18 @@ public class LoginServlet extends HttpServlet {
 
 		id = request.getParameter("id");
 		pwd = request.getParameter("pwd");
-		
+
 		MemberDAO dao = new MemberDAO();
 		vo = dao.getMemberData(id);
-		
+		System.out.println(String.valueOf(id).equals("admin"));
+
 		if (vo == null || !pwd.equals(vo.getMemberPwd())) {
 			out.println("<script> alert('login failed'); history.back(); </script>");
 		} else {
 			HttpSession session = request.getSession();
 			session.setAttribute("loginOK", vo);
 			response.sendRedirect("/shopping_web/index.jsp");
+
 		}
 	}
 

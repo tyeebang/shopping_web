@@ -16,21 +16,28 @@
 	<header>
 		<div id="hd_tp">
 			<%
-				MemberVO login = (MemberVO)session.getAttribute("loginOK");
+			MemberVO login = (MemberVO)session.getAttribute("loginOK");
 				if(login == null) {
 			%>
-			<ul id="hd_tp_ul">
-				<li><a href="./login.jsp">LOGIN</a></li>
-				<li><a href="./register.jsp">JOIN</a></li>
-			</ul>
+					<ul id="hd_tp_ul">
+						<li><a href="./login.jsp">LOGIN</a></li>
+						<li><a href="./register.jsp">JOIN</a></li>
+					</ul>
+			<%
+				} else if(login.getMemberId().equals("admin")) {
+			%>
+					<ul id="hd_tp_ul" style="width: 350px">
+						<li><a href="/shopping_web/logout">LOGOUT(<%= login.getMemberId() %>)</a></li>
+						<li><a href="./admin.jsp">only ADMIN</a></li>
+					</ul>
 			<%
 				} else {
 			%>
-			<ul id="hd_tp_ul" style="width: 350px">
-					<li><a href="/shopping_web/logout">LOGOUT(<%= login.getMemberId() %>)</a></li>
-					<!-- <li><a href="#">CART</a></li> -->
-					<li><a href="#">MY PAGE</a></li>
-			</ul>
+					<ul id="hd_tp_ul" style="width: 350px">
+						<li><a href="/shopping_web/logout">LOGOUT(<%= login.getMemberId() %>)</a></li>
+						<!-- <li><a href="#">CART</a></li> -->
+						<li><a href="./myPage.jsp">MY PAGE</a></li>
+					</ul>
 			<%
 				}
 			%>

@@ -19,7 +19,7 @@
 			$("button").click(
 					function() {
 						$.ajax({
-							url : "/shopping_web/items2.json",
+							url : "/shopping_web/items.json",
 							type : 'get',
 							dataType : "json",
 
@@ -28,7 +28,7 @@
 								alert(str);
 
 								for (let i = 0; i < json.length; i++) {
-									$("#demo").append(i + '번째 ' + json[i].it_name + " || ");
+									$("#demo").append((i + 1) + '번째 ' + json[i].it_name + " || ");
 									$("#demo").append(json[i].price + " || ");
 									$("#demo").append(json[i].img_url + " || ");
 									$("#demo").append(json[i].category + "<br>");

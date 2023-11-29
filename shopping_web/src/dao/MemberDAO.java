@@ -122,4 +122,34 @@ public class MemberDAO {
 		return result;
 	}
 	
+	
+	public int updateMember(MemberVO data) {
+		int result = 0;
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "update member set member_pwd = ?, member_mail = ?, member_name = ?, member_phone = ?, member_addr = ? where member_id = ?;";
+		
+		try {
+			conn = JdbcUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, data.getMemberPwd());
+			pstmt.setString(2, data.getMemberMail());
+			pstmt.setString(3, data.getMemberName());
+			pstmt.setString(4, data.getMemberPhone());
+			pstmt.setString(5, data.getMemberAddr());
+			pstmt.setString(6, data.getMemberId());
+			result = pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt);
+		}
+		
+		return result;
+	}
+	
+	
 }

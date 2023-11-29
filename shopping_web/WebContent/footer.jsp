@@ -13,5 +13,7 @@
 
 	<!-- js -->
 	<script src="./js/script.js"></script>
+	<script src="./js/items.js"></script>
+	<script src="./js/details.js"></script>
 </body>
 </html>

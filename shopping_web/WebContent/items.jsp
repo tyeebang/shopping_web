@@ -6,13 +6,14 @@
 
     <!-- article -->
     <article class="ca_article">
-        <h1>SKIRT</h1>
-        <p>치마 인기 상품을 만나보세요</p>
+    <%
+    	String category = request.getParameter("category");
+    %>
+        <h1><%= category %></h1>
+        <p><%= category %> 인기 상품을 만나보세요</p>
         
-        <div id="skirt_items">
-            <div class="skirt_item">
-                <!-- DB -> items -->
-            </div>
+        <div id="ca_items">
+
         </div>
     </article>
 

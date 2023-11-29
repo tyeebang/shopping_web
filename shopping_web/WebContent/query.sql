@@ -16,7 +16,3 @@ select * from member;
 delete from member where member_id = '';
 
 -- items table
-
-drop table items;
-
-create table items(it_name varchar2(50), price number, gender varchar2(8), category varchar2(6), img_url varchar2(35));

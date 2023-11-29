@@ -19,7 +19,7 @@
         
         <div id="items">
             <div class="item">
-                <!-- DB -> items -->
+                <!-- items -->
             </div>
         </div>
     </article>

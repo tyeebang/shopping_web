@@ -6,10 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>ONLY YOU</title>
-<link rel="stylesheet" href="./css/style.css?umA">
-<link rel="stylesheet" href="./css/items.css?umA">
-<link rel="stylesheet" href="./css/login.css?umA">
-<link rel="stylesheet" href="./css/register.css?umA">
+<link rel="stylesheet" href="./css/style.css?umB">
+<link rel="stylesheet" href="./css/items.css?umB">
+<link rel="stylesheet" href="./css/login.css?umB">
+<link rel="stylesheet" href="./css/register.css?umB">
 </head>
 <body>
 	<!-- header -->
@@ -43,11 +43,11 @@
 
 		<div id="hd_menu">
 			<ul id="hd_bt_ul">
-				<li><a href="./itemsTop.jsp">TOP</a></li>
-				<li><a href="./itemsBottom.jsp">BOTTOM</a></li>
-				<li><a href="./itemsOuter.jsp">OUTER</a></li>
-				<li><a href="./itemsOps.jsp">OPS</a></li>
-				<li><a href="./itemsSkirt.jsp">SKIRT</a></li>
+				<li><a href="./items.jsp?category=top">TOP</a></li>
+				<li><a href="./items.jsp?category=bottom">BOTTOM</a></li>
+				<li><a href="./items.jsp?category=outer">OUTER</a></li>
+				<li><a href="./items.jsp?category=ops">OPS</a></li>
+				<li><a href="./items.jsp?category=skirt">SKIRT</a></li>
 			</ul>
 		</div>
 

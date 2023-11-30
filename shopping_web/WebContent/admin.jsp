@@ -13,7 +13,7 @@
 
 <!-- article -->
 	<article id="ad_art">
-		<h1>회원 목록 조회(비번 제외 가능)</h1>
+		<h1>회원 목록 조회(PW제외)</h1>
     	<table border="1">
         	<tr>
             	<th>ID</th>

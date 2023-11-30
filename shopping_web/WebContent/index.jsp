@@ -8,9 +8,9 @@
                 <input type="radio" name="slide" id="hdZipSlide" checked>
                 <input type="radio" name="slide" id="strSlide">
                 <input type="radio" name="slide" id="itSlide">
-                <a href="./itemsOuter.jsp"><img src="./img/slide/hoodZipSlide.jpg" alt="hoodZipSlide"></a>
-                <a href="./itemsTop.jsp"><img src="./img/slide/sweatherSlide.jpg" alt="sweatherSlide"></a>
-                <a href="./itemsOuter.jsp"><img src="./img/slide/itemSlide.jpg" alt="itemSlide"></a>
+                <a href="./items.jsp?category=outer"><img src="./img/slide/hoodZipSlide.jpg" alt="hoodZipSlide"></a>
+                <a href="./items.jsp?category=outer"><img src="./img/slide/sweatherSlide.jpg" alt="sweatherSlide"></a>
+                <a href="./items.jsp?category=outer"><img src="./img/slide/itemSlide.jpg" alt="itemSlide"></a>
             </div>
         </div>
 

@@ -76,13 +76,12 @@
 /* detailed */
 
 .de_article {
-    display: flex;
     width: 1000px;
     height: 600px;
     margin: 50px auto;
 }
 
-.de_item {
+#de_items {
     display: flex;
     width: 100%;
     height: 100%;
@@ -111,10 +110,23 @@
     margin-left: 100px;
 }
 
-#detail_cont h3 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #afafaf;
+#detail_cont input[name = 'it_name'] {
+	font-size: 20px;
     color: #232323;
+    border: none;
+    border-bottom: 1px solid #afafaf;
+}
+
+#detail_cont input[name = 'price'] {
+	width: 45px;
+	line-height: 25px;
+	font-size: 16px;
+    color: #232323;
+    border: none;
+}
+
+#detail_cont input[type = 'text']:focus {
+    outline: none;
 }
 
 #detail_cont p {
@@ -126,7 +138,7 @@
     border-bottom: 1px solid #afafaf;
 }
 
-.de_article button {
+.de_article input[type = 'submit'] {
     margin-left: 300px;
     width: 60%;
     height: 45px;
@@ -138,6 +150,6 @@
     transition: .5s;
 }
 
-.de_article button:hover {
+.de_article input[type = 'submit']:hover {
     background-color: #202020;
 }

@@ -19,6 +19,5 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/happy/Documents/GitHub/shopping_web/shopping_web/WebContent/WEB-INF/lib/jsoup-1.17.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -123,22 +123,23 @@ public class MemberDAO {
 	}
 	
 	
-	public int updateMember(MemberVO data) {
+	public int updateMember(String idFir, String id, String pwd, String mail, String name, String phone, String addr) {
 		int result = 0;
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		String sql = "update member set member_pwd = ?, member_mail = ?, member_name = ?, member_phone = ?, member_addr = ? where member_id = ?;";
+		String sql = "update member set member_id = ?, member_pwd = ?, member_mail = ?, member_name = ?, member_phone = ?, member_addr = ? where member_id = ?";
 		
 		try {
 			conn = JdbcUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, data.getMemberPwd());
-			pstmt.setString(2, data.getMemberMail());
-			pstmt.setString(3, data.getMemberName());
-			pstmt.setString(4, data.getMemberPhone());
-			pstmt.setString(5, data.getMemberAddr());
-			pstmt.setString(6, data.getMemberId());
+			pstmt.setString(1, id);
+			pstmt.setString(2, pwd);
+			pstmt.setString(3, mail);
+			pstmt.setString(4, name);
+			pstmt.setString(5, phone);
+			pstmt.setString(6, addr);
+			pstmt.setString(7, idFir);
 			result = pstmt.executeUpdate();
 			
 		} catch (SQLException e) {

@@ -54,7 +54,7 @@
     border-right: 1px solid #afafaf;
 }
 
-#joinContainer input[type=text], input[type=password] {
+#joinContainer input[type=text], #joinContainer input[type=password] {
     width: 30%;
     height: 30px;
     font-size: 14px;

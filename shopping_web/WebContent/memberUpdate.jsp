@@ -24,12 +24,17 @@
 		
 		n = dao.updateMember(idFir, id, pwd, mail, name, phone, adrr);
 		
-		if(n > 0) {
-			out.print("<script> alert('success'); </script>");
-			response.sendRedirect("./index.jsp");
-		} else {
-			out.print("<script> alert('failed'); history.back(); </script>");
-		}
-	%>
+        out.println("<script>");
+        if(n > 0) {
+            out.println("alert('Success, please log in again');");
+            out.println("window.location.href = './index.jsp';");
+            out.println("</script>");
+            session.removeAttribute("loginOK");
+        } else {
+            out.println("alert('Failed');");
+            out.println("history.back();");
+            out.println("</script>");
+        }
+    %>
 </body>
 </html>

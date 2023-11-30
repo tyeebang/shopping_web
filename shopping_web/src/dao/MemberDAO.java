@@ -41,8 +41,6 @@ public class MemberDAO {
 			// TODO: handle exception
 			e.printStackTrace();
 			System.out.println("checkLoginUser : sql error");
-		} finally {
-			JdbcUtil.close(conn, pstmt, rs);
 		}
 		
 		return vo;

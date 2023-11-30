@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="./css/items.css?umB">
 <link rel="stylesheet" href="./css/login.css?umB">
 <link rel="stylesheet" href="./css/register.css?umB">
+<link rel="stylesheet" href="./css/last.css?umB">
 </head>
 <body>
 	<!-- header -->

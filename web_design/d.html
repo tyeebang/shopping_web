@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-<%@ include file="./menu.jsp" %>
-
-
-	<%
-		MemberVO id = (MemberVO)session.getAttribute("loginOK");
-	%>
-    <!-- article -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
     <article id="myPg">
 		<form action="./memberUpdate.jsp" method="post">
 			<div class="info">
@@ -40,13 +40,9 @@
 			</div>
             <div class="btns">
                 <input type="submit" value="정보 수정">
+                <input type="submit" value="회원 탈퇴">
             </div>
 		</form>
-		
-		<form action="/shopping_web/delete">
-			<input type="hidden" name="idFir" value="<%= id.getMemberId() %>" readonly>
-    		<input type="submit" value="회원 탈퇴" id="del">
-		</form>
     </article>
-
-<%@ include file="./footer.jsp" %>
+</body>
+</html>

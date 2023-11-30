@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import common.JdbcUtil;
 import vo.MemberVO;
@@ -14,6 +15,77 @@ public class MemberDAO {
 		
 	}
 	
+	public class MemberInfo {
+	    private ArrayList<String> listId;
+	    private ArrayList<String> listMail;
+	    private ArrayList<String> listName;
+	    private ArrayList<String> listPhone;
+	    private ArrayList<String> listAddr;
+
+	    public MemberInfo(ArrayList<String> listId, ArrayList<String> listMail, ArrayList<String> listName, ArrayList<String> listPhone, 
+	    		ArrayList<String> listAddr) {
+	        this.listId = listId;
+	        this.listMail = listMail;
+	        this.listName = listName;
+	        this.listPhone = listPhone;
+	        this.listAddr = listAddr;
+	    }
+
+	    public ArrayList<String> getListId() {
+	        return listId;
+	    }
+
+	    public ArrayList<String> getListMail() {
+	        return listMail;
+	    }
+
+	    public ArrayList<String> getListName() {
+	        return listName;
+	    }
+
+	    public ArrayList<String> getListPhone() {
+	        return listPhone;
+	    }
+
+	    public ArrayList<String> getListAddr() {
+	        return listAddr;
+	    }
+	}
+	
+	public MemberInfo getMemberList() {
+		ArrayList<String> listId = new ArrayList<>();
+		ArrayList<String> listMail = new ArrayList<>();
+		ArrayList<String> listName = new ArrayList<>();
+		ArrayList<String> listPhone = new ArrayList<>();
+		ArrayList<String> listAddr = new ArrayList<>();
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "select * from member";
+		
+		conn = JdbcUtil.getConnection();
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			while (rs.next()) {
+				listId.add(rs.getString("member_id"));
+				listMail.add(rs.getString("member_mail"));
+				listName.add(rs.getString("member_name"));
+				listPhone.add(rs.getString("member_phone"));
+				listAddr.add(rs.getString("member_addr"));
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt, rs);
+		}
+		
+		return new MemberInfo(listId, listMail, listName, listPhone, listAddr);
+	}
 	
 	public MemberVO getMemberData(String id) {
 		MemberVO vo = null;

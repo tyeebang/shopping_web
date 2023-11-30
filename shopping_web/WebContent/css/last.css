@@ -85,3 +85,21 @@
 #del {
 	width: 150px !important;
 }
+
+/*admin*/
+#ad_art {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 1000px;
+	height: 100%;
+}
+
+#ad_art td {
+	width: 235px;
+	text-align: center;
+}
+
+#ad_art tr td:nth-child(5) {
+	width: 350px;
+	height: 35px;
+}
